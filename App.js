@@ -1,11 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import SearchBar from './components/SearchBar';
+import Weather from './components/Weather';
+
+//While creating production Level app, we need to keep API in environment variable
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <SearchBar />
+      <Weather />
     </View>
   );
 }
